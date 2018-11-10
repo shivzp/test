@@ -2,7 +2,14 @@ package com.junit;
 
 public class Math {
 
-	public static void main(String[] args) {
-		System.out.println("Testing");
+	public Math() {}
+	
+	int calculateSum(int[] numbers) {
+		int sum = 0;
+		for(int i : numbers) {
+			sum += i;
+		}
+		return sum;
 	}
+	
 }
